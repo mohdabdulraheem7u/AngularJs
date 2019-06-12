@@ -1,0 +1,36 @@
+<h1>User Details</h1>
+
+<table ng-repeat="user in usersDetailsCtrl.usersDetails" style="border:1px solid black">
+
+    <tr>
+        <td>Id:</td>
+        <td>{{user.id}}</td>
+    </tr>
+    <tr>
+        <td>Name:</td>
+        <td>{{user.name}}</td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td>{{user.email}}</td>
+    </tr>
+    <tr>
+        <td>City:</td>
+        <td>{{user.address.city}}</td>
+    </tr>
+    </div>
+</table>
+<h4><a ui-sref="users">Back to User list</a></h4>
+
+<!-- <h1>List of Users</h1>
+<div ng-repeat="user in usersDetailsCtrl.usersDetails">
+<ul> -->
+
+    <!-- <li> -->
+
+        <!-- {{user.name}}
+        {{user.email}} -->
+
+    <!-- </li> 
+</ul> 
+</div> -->

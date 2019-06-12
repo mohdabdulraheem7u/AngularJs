@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AngularjsPro</title>
+    <base href="/" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js"></script>
+    <link href="app.css" rel="stylesheet" />
+    <!-- <script src="Scripts/app.js"></script> -->
+    <!-- <script src="app/components/courses/export/courses.js"></script> -->
+    <!-- <script src="app/components/users/export/users.js"></script>
+    <script src="app/components/usersDetails/export/usersDetails.js"></script> -->
+    <script src="Scripts/app.js"></script>
+    <script src="app/components/home/export/home.js"></script>
+    <script src="app/components/courses/export/courses.js"></script>
+    <script src="app/components/users/export/users.js"></script>
+    <script src="app/components/usersDetails/export/usersDetails.js"></script>
+    <!-- <script src="Scripts/app.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <table style="font-family: Arial">
+        <tr>
+            <td colspan="2" class="header">
+                <h1>WebSite Header</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="leftMenu">
+                <!-- by using ngRoute-->
+                <!-- <a href="home">Home</a>
+                <a href="courses">Courses</a>
+                <a href="users">Students</a> -->
+                <!-- <a href="usersDetails">UsersDetails</a> -->
+                <a ui-sref="home" ui-sref-active="activeState">Home</a>
+                <a ui-sref="courses" ui-sref-active="activeState">Courses</a>
+                <a ui-sref="users" ui-sref-active="activeState">Users</a>
+                <!-- <a ui-sref="usersDetails">UsersDetails</a> -->
+
+            </td>
+            <td class="mainContent">
+                <ui-view></ui-view>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="header">
+                <b>WebSite Footer</b>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
